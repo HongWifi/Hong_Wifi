@@ -15,6 +15,9 @@
 		D408262226E3437000E187A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D408262026E3437000E187A7 /* LaunchScreen.storyboard */; };
 		D408262D26E3437000E187A7 /* HongWifiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D408262C26E3437000E187A7 /* HongWifiTests.swift */; };
 		D408263826E3437000E187A7 /* HongWifiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D408263726E3437000E187A7 /* HongWifiUITests.swift */; };
+		D408264D26E343F900E187A7 /* HotspotManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D408264C26E343F900E187A7 /* HotspotManager.swift */; };
+		D408264F26E3440400E187A7 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D408264E26E3440400E187A7 /* UIView+Extension.swift */; };
+		D408265126E3440B00E187A7 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D408265026E3440B00E187A7 /* TestModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		D408263326E3437000E187A7 /* HongWifiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HongWifiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D408263726E3437000E187A7 /* HongWifiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HongWifiUITests.swift; sourceTree = "<group>"; };
 		D408263926E3437000E187A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D408264C26E343F900E187A7 /* HotspotManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotspotManager.swift; sourceTree = "<group>"; };
+		D408264E26E3440400E187A7 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		D408265026E3440B00E187A7 /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +105,8 @@
 		D408261426E3436F00E187A7 /* HongWifi */ = {
 			isa = PBXGroup;
 			children = (
-				D408261526E3436F00E187A7 /* AppDelegate.swift */,
-				D408261726E3436F00E187A7 /* SceneDelegate.swift */,
-				D408261926E3436F00E187A7 /* ViewController.swift */,
-				D408261B26E3436F00E187A7 /* Main.storyboard */,
-				D408261E26E3437000E187A7 /* Assets.xcassets */,
-				D408262026E3437000E187A7 /* LaunchScreen.storyboard */,
-				D408262326E3437000E187A7 /* Info.plist */,
+				D408264A26E343B700E187A7 /* Resources */,
+				D408264B26E343C000E187A7 /* Sources */,
 			);
 			path = HongWifi;
 			sourceTree = "<group>";
@@ -126,6 +127,70 @@
 				D408263926E3437000E187A7 /* Info.plist */,
 			);
 			path = HongWifiUITests;
+			sourceTree = "<group>";
+		};
+		D408264526E3439C00E187A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D408265026E3440B00E187A7 /* TestModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D408264626E343A300E187A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D408261B26E3436F00E187A7 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D408264726E343A900E187A7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D408261926E3436F00E187A7 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D408264826E343AE00E187A7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D408264C26E343F900E187A7 /* HotspotManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D408264926E343B200E187A7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D408264E26E3440400E187A7 /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D408264A26E343B700E187A7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D408261526E3436F00E187A7 /* AppDelegate.swift */,
+				D408261726E3436F00E187A7 /* SceneDelegate.swift */,
+				D408261E26E3437000E187A7 /* Assets.xcassets */,
+				D408262026E3437000E187A7 /* LaunchScreen.storyboard */,
+				D408262326E3437000E187A7 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D408264B26E343C000E187A7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D408264926E343B200E187A7 /* Extensions */,
+				D408264826E343AE00E187A7 /* Utils */,
+				D408264726E343A900E187A7 /* Controller */,
+				D408264626E343A300E187A7 /* View */,
+				D408264526E3439C00E187A7 /* Model */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +326,9 @@
 				D408261A26E3436F00E187A7 /* ViewController.swift in Sources */,
 				D408261626E3436F00E187A7 /* AppDelegate.swift in Sources */,
 				D408261826E3436F00E187A7 /* SceneDelegate.swift in Sources */,
+				D408265126E3440B00E187A7 /* TestModel.swift in Sources */,
+				D408264F26E3440400E187A7 /* UIView+Extension.swift in Sources */,
+				D408264D26E343F900E187A7 /* HotspotManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,7 +506,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TZVHD77BLL;
-				INFOPLIST_FILE = HongWifi/Info.plist;
+				INFOPLIST_FILE = HongWifi/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,7 +525,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TZVHD77BLL;
-				INFOPLIST_FILE = HongWifi/Info.plist;
+				INFOPLIST_FILE = HongWifi/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
