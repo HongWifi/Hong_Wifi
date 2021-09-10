@@ -13,8 +13,8 @@ class wifiDataSource {
     
     static func generateWifiData() -> [wifi] {
         return [
-            HongWifi.wifi(nickname: "Wifi Nickname", wifiName: "Wifi Name", wifiPassword: "Wifi Password"),
-            HongWifi.wifi(nickname: "tomtom", wifiName: "tomtom wifi", wifiPassword: "abcdefg")
+            HongWifi.wifi(nickname: "Wifi_Nickname", wifiName: "Wifi_Name", wifiPassword: "Wifi_Password"),
+            HongWifi.wifi(nickname: "집", wifiName: "SK_WiFiGIGACDF7_5G", wifiPassword: "1704032356")
         ]
     }
     

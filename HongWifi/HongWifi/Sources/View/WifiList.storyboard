@@ -26,11 +26,11 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZCI-6Q-0EV" userLabel="Wifi Background View">
                                             <rect key="frame" x="10" y="10" width="394" height="110"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Dl6-ax-c17">
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Dl6-ax-c17">
                                                     <rect key="frame" x="30" y="10" width="170" height="90"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nicknameLabel" lineBreakMode="tailTruncation" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dav-pu-sPr">
-                                                            <rect key="frame" x="0.0" y="0.0" width="170" height="54"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="170" height="44"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="24" id="8j6-81-6vq"/>
                                                             </constraints>
@@ -39,7 +39,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wifiNameLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WoK-gg-X9B">
-                                                            <rect key="frame" x="0.0" y="54" width="170" height="18"/>
+                                                            <rect key="frame" x="0.0" y="49" width="170" height="18"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="18" id="aC3-jc-shY"/>
                                                             </constraints>
@@ -116,7 +116,7 @@
                         <barButtonItem key="rightBarButtonItem" image="camera.fill" catalog="system" id="pPK-pQ-3P0">
                             <color key="tintColor" red="0.79607843137254897" green="0.86274509803921573" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                             <connections>
-                                <action selector="cameraButtonPressed:" destination="6id-ew-MMe" id="6n4-zT-2SE"/>
+                                <action selector="didTapCameraButton:" destination="6id-ew-MMe" id="Y3h-lA-iPZ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

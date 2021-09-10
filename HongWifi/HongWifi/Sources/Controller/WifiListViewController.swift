@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import NetworkExtension
 
 class WifiListViewController: UITableViewController {
 
@@ -17,7 +18,7 @@ class WifiListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        storedTableView.separatorStyle = .none
+        storedTableView.separatorStyle = .none // cell 구분선 제거
         storedTableView.showsVerticalScrollIndicator = false
         
         
@@ -46,7 +47,25 @@ class WifiListViewController: UITableViewController {
         return cell
     }
     
-    //MARK: - TableView Edit
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        // wifi 연결
+        let SSID = wifisDataSource.wifis[indexPath.row].wifiName
+        let passphrase = wifisDataSource.wifis[indexPath.row].wifiPassword
+        
+        let wiFiConfig = NEHotspotConfiguration(ssid: SSID!, passphrase: passphrase!, isWEP: false)
+
+            NEHotspotConfigurationManager.shared.apply(wiFiConfig) { error in
+              if let error = error {
+                print(error.localizedDescription)
+              }
+              else {
+                print("connection successful")
+              }
+            }
+    }
+    
+    //MARK: - TableView Edit Methods
     
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
@@ -54,8 +73,14 @@ class WifiListViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
 
+        // 왼쪽으로 밀어서 cell 삭제
         if editingStyle == .delete {
             wifisDataSource.remove(at: indexPath, to: tableView)
         }
     }
+    
+    @IBAction func didTapCameraButton(_ sender: Any) {
+        // 카메라 화면으로 이동
+    }
+    
 }

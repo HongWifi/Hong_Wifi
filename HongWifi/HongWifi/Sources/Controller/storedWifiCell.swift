@@ -22,6 +22,7 @@ class StoredWifiCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        // cell 아래 그림자 생성
         wifiBackgroundView.layer.cornerRadius = 25
         wifiBackgroundView.layer.shadowOpacity = 0.08
         wifiBackgroundView.layer.shadowOffset = CGSize(width: 1, height: 3)
