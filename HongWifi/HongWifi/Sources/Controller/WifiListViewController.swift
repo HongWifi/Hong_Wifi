@@ -46,4 +46,16 @@ class WifiListViewController: UITableViewController {
         return cell
     }
     
+    //MARK: - TableView Edit
+    
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+
+        if editingStyle == .delete {
+            wifisDataSource.remove(at: indexPath, to: tableView)
+        }
+    }
 }
