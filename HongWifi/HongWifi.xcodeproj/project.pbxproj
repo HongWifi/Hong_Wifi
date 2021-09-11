@@ -3,17 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9126A9B326E72473002D60FE /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9126A9B226E72473002D60FE /* Storyboard.storyboard */; };
-		9126A9B526E76ECC002D60FE /* CopyWifiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9126A9B426E76ECC002D60FE /* CopyWifiController.swift */; };
+		474BC9DD0FF91A6AC7AA2A3A /* Pods_HongWifi_HongWifiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B84BFEB78B1E8C63DBF0E84 /* Pods_HongWifi_HongWifiUITests.framework */; };
+		4A24180ECB0FF10CFEF4A1FF /* Pods_HongWifiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D49F15EC31CE6DA734D8A9 /* Pods_HongWifiTests.framework */; };
+		4DD5D6BA41768A1B401BDBA6 /* Pods_HongWifi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC43FED7385AB9A1D9D5B3D /* Pods_HongWifi.framework */; };
+		9126A9B326E72473002D60FE /* TextVision.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9126A9B226E72473002D60FE /* TextVision.storyboard */; };
+		9126A9B526E76ECC002D60FE /* TextVisionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9126A9B426E76ECC002D60FE /* TextVisionVC.swift */; };
 		91C33A3926EBC1CF002EE76F /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C33A3826EBC1CF002EE76F /* ExternalAccessory.framework */; };
-		91C33A4126EBC772002EE76F /* Popup1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91C33A4026EBC772002EE76F /* Popup1.storyboard */; };
-		91C33A4326EBCA81002EE76F /* Popup1Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C33A4226EBCA81002EE76F /* Popup1Controller.swift */; };
-		91C33A4526EC2278002EE76F /* Popup2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91C33A4426EC2278002EE76F /* Popup2.storyboard */; };
-		91C33A4726EC23C9002EE76F /* Popup2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C33A4626EC23C9002EE76F /* Popup2Controller.swift */; };
 		91C33A4926EC2660002EE76F /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C33A4826EC2660002EE76F /* HomeKit.framework */; };
 		D408261626E3436F00E187A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D408261526E3436F00E187A7 /* AppDelegate.swift */; };
 		D408261826E3436F00E187A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D408261726E3436F00E187A7 /* SceneDelegate.swift */; };
@@ -27,11 +26,11 @@
 		D408264F26E3440400E187A7 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D408264E26E3440400E187A7 /* UIView+Extension.swift */; };
 		D408265126E3440B00E187A7 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D408265026E3440B00E187A7 /* TestModel.swift */; };
 		D44654A026EC3A72004DDADF /* WifiList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D446549E26EC3A72004DDADF /* WifiList.storyboard */; };
-		D44654A126EC3A72004DDADF /* storedWifiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D446549F26EC3A72004DDADF /* storedWifiCell.xib */; };
-		D44654A526EC3A84004DDADF /* wifiDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44654A226EC3A84004DDADF /* wifiDataSource.swift */; };
+		D44654A526EC3A84004DDADF /* WifiDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44654A226EC3A84004DDADF /* WifiDataSource.swift */; };
 		D44654A626EC3A84004DDADF /* WifiListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44654A326EC3A84004DDADF /* WifiListViewController.swift */; };
-		D44654A726EC3A84004DDADF /* storedWifiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44654A426EC3A84004DDADF /* storedWifiCell.swift */; };
-		D44654A926EC3A92004DDADF /* wifi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44654A826EC3A92004DDADF /* wifi.swift */; };
+		D44654A726EC3A84004DDADF /* StoredWifiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44654A426EC3A84004DDADF /* StoredWifiCell.swift */; };
+		D44654A926EC3A92004DDADF /* Wifi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44654A826EC3A92004DDADF /* Wifi.swift */; };
+		D49AEE7D26ECE55900D3BDD2 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D49AEE7C26ECE55900D3BDD2 /* NetworkExtension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,15 +51,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9126A9B226E72473002D60FE /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
-		9126A9B426E76ECC002D60FE /* CopyWifiController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyWifiController.swift; sourceTree = "<group>"; };
-		91C33A3626EBC1CF002EE76F /* HongWifi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HongWifi.entitlements; sourceTree = "<group>"; };
+		1B0ED4CBC780AF841A643E1F /* Pods-HongWifi-HongWifiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HongWifi-HongWifiUITests.release.xcconfig"; path = "Target Support Files/Pods-HongWifi-HongWifiUITests/Pods-HongWifi-HongWifiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2524EE523D1D60A55D4A994C /* Pods-HongWifiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HongWifiTests.debug.xcconfig"; path = "Target Support Files/Pods-HongWifiTests/Pods-HongWifiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		28D49F15EC31CE6DA734D8A9 /* Pods_HongWifiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HongWifiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60AA05ED2F1AF5588A1333C3 /* Pods-HongWifi-HongWifiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HongWifi-HongWifiUITests.debug.xcconfig"; path = "Target Support Files/Pods-HongWifi-HongWifiUITests/Pods-HongWifi-HongWifiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7B84BFEB78B1E8C63DBF0E84 /* Pods_HongWifi_HongWifiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HongWifi_HongWifiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9126A9B226E72473002D60FE /* TextVision.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TextVision.storyboard; sourceTree = "<group>"; };
+		9126A9B426E76ECC002D60FE /* TextVisionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextVisionVC.swift; sourceTree = "<group>"; };
 		91C33A3826EBC1CF002EE76F /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
-		91C33A4026EBC772002EE76F /* Popup1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Popup1.storyboard; sourceTree = "<group>"; };
-		91C33A4226EBCA81002EE76F /* Popup1Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popup1Controller.swift; sourceTree = "<group>"; };
-		91C33A4426EC2278002EE76F /* Popup2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Popup2.storyboard; sourceTree = "<group>"; };
-		91C33A4626EC23C9002EE76F /* Popup2Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popup2Controller.swift; sourceTree = "<group>"; };
 		91C33A4826EC2660002EE76F /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
+		9A9B402F9D73382D70FF9702 /* Pods-HongWifi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HongWifi.debug.xcconfig"; path = "Target Support Files/Pods-HongWifi/Pods-HongWifi.debug.xcconfig"; sourceTree = "<group>"; };
+		C8A727446297E383B9C4ABBA /* Pods-HongWifiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HongWifiTests.release.xcconfig"; path = "Target Support Files/Pods-HongWifiTests/Pods-HongWifiTests.release.xcconfig"; sourceTree = "<group>"; };
 		D408261226E3436F00E187A7 /* HongWifi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HongWifi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D408261526E3436F00E187A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D408261726E3436F00E187A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,11 +80,14 @@
 		D408264E26E3440400E187A7 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		D408265026E3440B00E187A7 /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
 		D446549E26EC3A72004DDADF /* WifiList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WifiList.storyboard; sourceTree = "<group>"; };
-		D446549F26EC3A72004DDADF /* storedWifiCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = storedWifiCell.xib; sourceTree = "<group>"; };
-		D44654A226EC3A84004DDADF /* wifiDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = wifiDataSource.swift; sourceTree = "<group>"; };
+		D44654A226EC3A84004DDADF /* WifiDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WifiDataSource.swift; sourceTree = "<group>"; };
 		D44654A326EC3A84004DDADF /* WifiListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WifiListViewController.swift; sourceTree = "<group>"; };
-		D44654A426EC3A84004DDADF /* storedWifiCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = storedWifiCell.swift; sourceTree = "<group>"; };
-		D44654A826EC3A92004DDADF /* wifi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = wifi.swift; sourceTree = "<group>"; };
+		D44654A426EC3A84004DDADF /* StoredWifiCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoredWifiCell.swift; sourceTree = "<group>"; };
+		D44654A826EC3A92004DDADF /* Wifi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wifi.swift; sourceTree = "<group>"; };
+		D49AEE7C26ECE55900D3BDD2 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		D4FD465426ECEAD900E9FFF4 /* HongWifi.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = HongWifi.entitlements; sourceTree = "<group>"; };
+		DDC43FED7385AB9A1D9D5B3D /* Pods_HongWifi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HongWifi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5B581F10EAF77293C75F82E /* Pods-HongWifi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HongWifi.release.xcconfig"; path = "Target Support Files/Pods-HongWifi/Pods-HongWifi.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +96,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				91C33A4926EC2660002EE76F /* HomeKit.framework in Frameworks */,
+				D49AEE7D26ECE55900D3BDD2 /* NetworkExtension.framework in Frameworks */,
 				91C33A3926EBC1CF002EE76F /* ExternalAccessory.framework in Frameworks */,
+				4DD5D6BA41768A1B401BDBA6 /* Pods_HongWifi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A24180ECB0FF10CFEF4A1FF /* Pods_HongWifiTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				474BC9DD0FF91A6AC7AA2A3A /* Pods_HongWifi_HongWifiUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,10 +124,27 @@
 		91C33A3726EBC1CF002EE76F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D49AEE7C26ECE55900D3BDD2 /* NetworkExtension.framework */,
 				91C33A4826EC2660002EE76F /* HomeKit.framework */,
 				91C33A3826EBC1CF002EE76F /* ExternalAccessory.framework */,
+				DDC43FED7385AB9A1D9D5B3D /* Pods_HongWifi.framework */,
+				7B84BFEB78B1E8C63DBF0E84 /* Pods_HongWifi_HongWifiUITests.framework */,
+				28D49F15EC31CE6DA734D8A9 /* Pods_HongWifiTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		996A9796856576DB13B941F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A9B402F9D73382D70FF9702 /* Pods-HongWifi.debug.xcconfig */,
+				E5B581F10EAF77293C75F82E /* Pods-HongWifi.release.xcconfig */,
+				60AA05ED2F1AF5588A1333C3 /* Pods-HongWifi-HongWifiUITests.debug.xcconfig */,
+				1B0ED4CBC780AF841A643E1F /* Pods-HongWifi-HongWifiUITests.release.xcconfig */,
+				2524EE523D1D60A55D4A994C /* Pods-HongWifiTests.debug.xcconfig */,
+				C8A727446297E383B9C4ABBA /* Pods-HongWifiTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		D408260926E3436F00E187A7 = {
@@ -130,6 +155,7 @@
 				D408263626E3437000E187A7 /* HongWifiUITests */,
 				D408261326E3436F00E187A7 /* Products */,
 				91C33A3726EBC1CF002EE76F /* Frameworks */,
+				996A9796856576DB13B941F8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,7 +172,7 @@
 		D408261426E3436F00E187A7 /* HongWifi */ = {
 			isa = PBXGroup;
 			children = (
-				91C33A3626EBC1CF002EE76F /* HongWifi.entitlements */,
+				D4FD465426ECEAD900E9FFF4 /* HongWifi.entitlements */,
 				D408264A26E343B700E187A7 /* Resources */,
 				D408264B26E343C000E187A7 /* Sources */,
 			);
@@ -174,7 +200,7 @@
 		D408264526E3439C00E187A7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D44654A826EC3A92004DDADF /* wifi.swift */,
+				D44654A826EC3A92004DDADF /* Wifi.swift */,
 				D408265026E3440B00E187A7 /* TestModel.swift */,
 			);
 			path = Model;
@@ -184,11 +210,8 @@
 			isa = PBXGroup;
 			children = (
 				D408261B26E3436F00E187A7 /* Main.storyboard */,
-				D446549F26EC3A72004DDADF /* storedWifiCell.xib */,
 				D446549E26EC3A72004DDADF /* WifiList.storyboard */,
-				9126A9B226E72473002D60FE /* Storyboard.storyboard */,
-				91C33A4026EBC772002EE76F /* Popup1.storyboard */,
-				91C33A4426EC2278002EE76F /* Popup2.storyboard */,
+				9126A9B226E72473002D60FE /* TextVision.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -196,13 +219,11 @@
 		D408264726E343A900E187A7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D44654A426EC3A84004DDADF /* storedWifiCell.swift */,
-				D44654A226EC3A84004DDADF /* wifiDataSource.swift */,
 				D44654A326EC3A84004DDADF /* WifiListViewController.swift */,
+				D44654A426EC3A84004DDADF /* StoredWifiCell.swift */,
+				D44654A226EC3A84004DDADF /* WifiDataSource.swift */,
 				D408261926E3436F00E187A7 /* ViewController.swift */,
-				9126A9B426E76ECC002D60FE /* CopyWifiController.swift */,
-				91C33A4226EBCA81002EE76F /* Popup1Controller.swift */,
-				91C33A4626EC23C9002EE76F /* Popup2Controller.swift */,
+				9126A9B426E76ECC002D60FE /* TextVisionVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -254,9 +275,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D408263C26E3437000E187A7 /* Build configuration list for PBXNativeTarget "HongWifi" */;
 			buildPhases = (
+				F09A649D099CCCD7AB4C1A1B /* [CP] Check Pods Manifest.lock */,
 				D408260E26E3436F00E187A7 /* Sources */,
 				D408260F26E3436F00E187A7 /* Frameworks */,
 				D408261026E3436F00E187A7 /* Resources */,
+				AE259AE5E7E32CEACE778CF4 /* [CP] Embed Pods Frameworks */,
+				B389FE5B784236ECBFDB4979 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -271,6 +295,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D408263F26E3437000E187A7 /* Build configuration list for PBXNativeTarget "HongWifiTests" */;
 			buildPhases = (
+				053EE1D34F740ABD807482CC /* [CP] Check Pods Manifest.lock */,
 				D408262426E3437000E187A7 /* Sources */,
 				D408262526E3437000E187A7 /* Frameworks */,
 				D408262626E3437000E187A7 /* Resources */,
@@ -289,9 +314,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D408264226E3437000E187A7 /* Build configuration list for PBXNativeTarget "HongWifiUITests" */;
 			buildPhases = (
+				A2E1A71EC4D46B104A4D09AA /* [CP] Check Pods Manifest.lock */,
 				D408262F26E3437000E187A7 /* Sources */,
 				D408263026E3437000E187A7 /* Frameworks */,
 				D408263126E3437000E187A7 /* Resources */,
+				6DE4889DC357C1F120AA0F3C /* [CP] Embed Pods Frameworks */,
+				EC3DE84EB7049E8E0EDB3970 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -354,11 +382,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D408262226E3437000E187A7 /* LaunchScreen.storyboard in Resources */,
-				9126A9B326E72473002D60FE /* Storyboard.storyboard in Resources */,
-				91C33A4526EC2278002EE76F /* Popup2.storyboard in Resources */,
-				D44654A126EC3A72004DDADF /* storedWifiCell.xib in Resources */,
+				9126A9B326E72473002D60FE /* TextVision.storyboard in Resources */,
 				D44654A026EC3A72004DDADF /* WifiList.storyboard in Resources */,
-				91C33A4126EBC772002EE76F /* Popup1.storyboard in Resources */,
 				D408261F26E3437000E187A7 /* Assets.xcassets in Resources */,
 				D408261D26E3436F00E187A7 /* Main.storyboard in Resources */,
 			);
@@ -380,14 +405,150 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		053EE1D34F740ABD807482CC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HongWifiTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DE4889DC357C1F120AA0F3C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HongWifi-HongWifiUITests/Pods-HongWifi-HongWifiUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HongWifi-HongWifiUITests/Pods-HongWifi-HongWifiUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HongWifi-HongWifiUITests/Pods-HongWifi-HongWifiUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2E1A71EC4D46B104A4D09AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HongWifi-HongWifiUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE259AE5E7E32CEACE778CF4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HongWifi/Pods-HongWifi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HongWifi/Pods-HongWifi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HongWifi/Pods-HongWifi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B389FE5B784236ECBFDB4979 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HongWifi/Pods-HongWifi-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HongWifi/Pods-HongWifi-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HongWifi/Pods-HongWifi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC3DE84EB7049E8E0EDB3970 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HongWifi-HongWifiUITests/Pods-HongWifi-HongWifiUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HongWifi-HongWifiUITests/Pods-HongWifi-HongWifiUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HongWifi-HongWifiUITests/Pods-HongWifi-HongWifiUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F09A649D099CCCD7AB4C1A1B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HongWifi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D408260E26E3436F00E187A7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91C33A4326EBCA81002EE76F /* Popup1Controller.swift in Sources */,
-				D44654A526EC3A84004DDADF /* wifiDataSource.swift in Sources */,
-				9126A9B526E76ECC002D60FE /* CopyWifiController.swift in Sources */,
+				D44654A526EC3A84004DDADF /* WifiDataSource.swift in Sources */,
+				9126A9B526E76ECC002D60FE /* TextVisionVC.swift in Sources */,
 				D408261A26E3436F00E187A7 /* ViewController.swift in Sources */,
 				D408261626E3436F00E187A7 /* AppDelegate.swift in Sources */,
 				D408261826E3436F00E187A7 /* SceneDelegate.swift in Sources */,
@@ -395,9 +556,8 @@
 				D408264F26E3440400E187A7 /* UIView+Extension.swift in Sources */,
 				D408264D26E343F900E187A7 /* HotspotManager.swift in Sources */,
 				D44654A626EC3A84004DDADF /* WifiListViewController.swift in Sources */,
-				91C33A4726EC23C9002EE76F /* Popup2Controller.swift in Sources */,
-				D44654A926EC3A92004DDADF /* wifi.swift in Sources */,
-				D44654A726EC3A84004DDADF /* storedWifiCell.swift in Sources */,
+				D44654A926EC3A92004DDADF /* Wifi.swift in Sources */,
+				D44654A726EC3A84004DDADF /* StoredWifiCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -570,6 +730,7 @@
 		};
 		D408263D26E3437000E187A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A9B402F9D73382D70FF9702 /* Pods-HongWifi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -581,7 +742,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.minji.HongWifi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.muyahong.HongWifi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -590,6 +751,7 @@
 		};
 		D408263E26E3437000E187A7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5B581F10EAF77293C75F82E /* Pods-HongWifi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -601,7 +763,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.minji.HongWifi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.muyahong.HongWifi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -610,6 +772,7 @@
 		};
 		D408264026E3437000E187A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2524EE523D1D60A55D4A994C /* Pods-HongWifiTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -632,6 +795,7 @@
 		};
 		D408264126E3437000E187A7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8A727446297E383B9C4ABBA /* Pods-HongWifiTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -654,6 +818,7 @@
 		};
 		D408264326E3437000E187A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60AA05ED2F1AF5588A1333C3 /* Pods-HongWifi-HongWifiUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -674,6 +839,7 @@
 		};
 		D408264426E3437000E187A7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B0ED4CBC780AF841A643E1F /* Pods-HongWifi-HongWifiUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

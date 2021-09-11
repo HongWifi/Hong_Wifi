@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct wifi {
+struct Wifi {
     var nickname: String?
     var wifiName: String?
     var wifiPassword: String?

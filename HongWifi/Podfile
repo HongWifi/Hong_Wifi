@@ -1,0 +1,25 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'HongWifi' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for HongWifi
+
+pod 'SnapKit'  
+pod 'GoogleMLKit/TextRecognition', '2.3.0'
+pod 'GoogleMLKit/TextRecognitionChinese', '2.3.0'
+pod 'GoogleMLKit/TextRecognitionDevanagari', '2.3.0'
+pod 'GoogleMLKit/TextRecognitionJapanese', '2.3.0'
+pod 'GoogleMLKit/TextRecognitionKorean', '2.3.0'
+  target 'HongWifiTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'HongWifiUITests' do
+    # Pods for testing
+  end
+
+end
