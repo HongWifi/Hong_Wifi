@@ -107,11 +107,8 @@ class CopyWifiController: UIViewController, UITextFieldDelegate {
     
     @objc func keyboardWillDisappear(noti: NSNotification) {
         if let keyboardFrame: NSValue = noti.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue {
-            let keyboardRectangle = keyboardFrame.cgRectValue
-            let keyboardHeight = keyboardRectangle.height
-            self.view.frame.origin.y += keyboardHeight
+            self.view.frame.origin.y = 0
         }
     }
 
-  
 }

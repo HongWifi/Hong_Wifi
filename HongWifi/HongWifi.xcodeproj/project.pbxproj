@@ -26,6 +26,12 @@
 		D408264D26E343F900E187A7 /* HotspotManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D408264C26E343F900E187A7 /* HotspotManager.swift */; };
 		D408264F26E3440400E187A7 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D408264E26E3440400E187A7 /* UIView+Extension.swift */; };
 		D408265126E3440B00E187A7 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D408265026E3440B00E187A7 /* TestModel.swift */; };
+		D44654A026EC3A72004DDADF /* WifiList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D446549E26EC3A72004DDADF /* WifiList.storyboard */; };
+		D44654A126EC3A72004DDADF /* storedWifiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D446549F26EC3A72004DDADF /* storedWifiCell.xib */; };
+		D44654A526EC3A84004DDADF /* wifiDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44654A226EC3A84004DDADF /* wifiDataSource.swift */; };
+		D44654A626EC3A84004DDADF /* WifiListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44654A326EC3A84004DDADF /* WifiListViewController.swift */; };
+		D44654A726EC3A84004DDADF /* storedWifiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44654A426EC3A84004DDADF /* storedWifiCell.swift */; };
+		D44654A926EC3A92004DDADF /* wifi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44654A826EC3A92004DDADF /* wifi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +78,12 @@
 		D408264C26E343F900E187A7 /* HotspotManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotspotManager.swift; sourceTree = "<group>"; };
 		D408264E26E3440400E187A7 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		D408265026E3440B00E187A7 /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
+		D446549E26EC3A72004DDADF /* WifiList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WifiList.storyboard; sourceTree = "<group>"; };
+		D446549F26EC3A72004DDADF /* storedWifiCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = storedWifiCell.xib; sourceTree = "<group>"; };
+		D44654A226EC3A84004DDADF /* wifiDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = wifiDataSource.swift; sourceTree = "<group>"; };
+		D44654A326EC3A84004DDADF /* WifiListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WifiListViewController.swift; sourceTree = "<group>"; };
+		D44654A426EC3A84004DDADF /* storedWifiCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = storedWifiCell.swift; sourceTree = "<group>"; };
+		D44654A826EC3A92004DDADF /* wifi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = wifi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +174,7 @@
 		D408264526E3439C00E187A7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D44654A826EC3A92004DDADF /* wifi.swift */,
 				D408265026E3440B00E187A7 /* TestModel.swift */,
 			);
 			path = Model;
@@ -171,6 +184,8 @@
 			isa = PBXGroup;
 			children = (
 				D408261B26E3436F00E187A7 /* Main.storyboard */,
+				D446549F26EC3A72004DDADF /* storedWifiCell.xib */,
+				D446549E26EC3A72004DDADF /* WifiList.storyboard */,
 				9126A9B226E72473002D60FE /* Storyboard.storyboard */,
 				91C33A4026EBC772002EE76F /* Popup1.storyboard */,
 				91C33A4426EC2278002EE76F /* Popup2.storyboard */,
@@ -181,6 +196,9 @@
 		D408264726E343A900E187A7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D44654A426EC3A84004DDADF /* storedWifiCell.swift */,
+				D44654A226EC3A84004DDADF /* wifiDataSource.swift */,
+				D44654A326EC3A84004DDADF /* WifiListViewController.swift */,
 				D408261926E3436F00E187A7 /* ViewController.swift */,
 				9126A9B426E76ECC002D60FE /* CopyWifiController.swift */,
 				91C33A4226EBCA81002EE76F /* Popup1Controller.swift */,
@@ -338,6 +356,8 @@
 				D408262226E3437000E187A7 /* LaunchScreen.storyboard in Resources */,
 				9126A9B326E72473002D60FE /* Storyboard.storyboard in Resources */,
 				91C33A4526EC2278002EE76F /* Popup2.storyboard in Resources */,
+				D44654A126EC3A72004DDADF /* storedWifiCell.xib in Resources */,
+				D44654A026EC3A72004DDADF /* WifiList.storyboard in Resources */,
 				91C33A4126EBC772002EE76F /* Popup1.storyboard in Resources */,
 				D408261F26E3437000E187A7 /* Assets.xcassets in Resources */,
 				D408261D26E3436F00E187A7 /* Main.storyboard in Resources */,
@@ -366,6 +386,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91C33A4326EBCA81002EE76F /* Popup1Controller.swift in Sources */,
+				D44654A526EC3A84004DDADF /* wifiDataSource.swift in Sources */,
 				9126A9B526E76ECC002D60FE /* CopyWifiController.swift in Sources */,
 				D408261A26E3436F00E187A7 /* ViewController.swift in Sources */,
 				D408261626E3436F00E187A7 /* AppDelegate.swift in Sources */,
@@ -373,7 +394,10 @@
 				D408265126E3440B00E187A7 /* TestModel.swift in Sources */,
 				D408264F26E3440400E187A7 /* UIView+Extension.swift in Sources */,
 				D408264D26E343F900E187A7 /* HotspotManager.swift in Sources */,
+				D44654A626EC3A84004DDADF /* WifiListViewController.swift in Sources */,
 				91C33A4726EC23C9002EE76F /* Popup2Controller.swift in Sources */,
+				D44654A926EC3A92004DDADF /* wifi.swift in Sources */,
+				D44654A726EC3A84004DDADF /* storedWifiCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,7 +575,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = HongWifi/HongWifi.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Q2ALK636TS;
+				DEVELOPMENT_TEAM = TZVHD77BLL;
 				INFOPLIST_FILE = HongWifi/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -571,7 +595,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = HongWifi/HongWifi.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Q2ALK636TS;
+				DEVELOPMENT_TEAM = TZVHD77BLL;
 				INFOPLIST_FILE = HongWifi/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -590,7 +614,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Q2ALK636TS;
+				DEVELOPMENT_TEAM = TZVHD77BLL;
 				INFOPLIST_FILE = HongWifiTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -612,7 +636,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Q2ALK636TS;
+				DEVELOPMENT_TEAM = TZVHD77BLL;
 				INFOPLIST_FILE = HongWifiTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -633,7 +657,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Q2ALK636TS;
+				DEVELOPMENT_TEAM = TZVHD77BLL;
 				INFOPLIST_FILE = HongWifiUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -653,7 +677,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Q2ALK636TS;
+				DEVELOPMENT_TEAM = TZVHD77BLL;
 				INFOPLIST_FILE = HongWifiUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
