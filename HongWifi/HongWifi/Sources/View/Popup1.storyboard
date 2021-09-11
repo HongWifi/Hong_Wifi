@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Popup1 Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="Popup1" id="Y6W-OH-hqX" customClass="Popup1Controller" customModule="HongWifi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="Popup1" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wmn-ya-bqB">
+                                <rect key="frame" x="87" y="223" width="240" height="181"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fB8-0L-fgS">
+                                        <rect key="frame" x="25" y="126" width="85" height="35"/>
+                                        <color key="backgroundColor" red="0.77641295160000001" green="0.86686470859999998" blue="0.9662949958" alpha="0.81063660879999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="dT5-yN-14i"/>
+                                            <constraint firstAttribute="width" constant="85" id="wVM-LV-Ym3"/>
+                                        </constraints>
+                                        <state key="normal" title="이 Wifi 저장">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="saveWifi:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="10s-9P-1lo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Tw-Vg-JJd">
+                                        <rect key="frame" x="130" y="126" width="85" height="35"/>
+                                        <color key="backgroundColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="0.35848251241721857" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="85" id="3bE-8C-IWN"/>
+                                            <constraint firstAttribute="height" constant="35" id="8lG-ow-hsB"/>
+                                        </constraints>
+                                        <state key="normal" title="저장 안해요">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="dontSaveWifi:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Jpq-ih-Qel"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="연결 성공!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H53-uM-Cru">
+                                        <rect key="frame" x="50" y="58" width="140" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="140" id="CaK-Bo-tnV"/>
+                                            <constraint firstAttribute="height" constant="40" id="nRX-4R-84U"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.3725611887821535" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="fB8-0L-fgS" firstAttribute="top" secondItem="H53-uM-Cru" secondAttribute="bottom" constant="28" id="8Ka-AP-4Re"/>
+                                    <constraint firstItem="8Tw-Vg-JJd" firstAttribute="top" secondItem="H53-uM-Cru" secondAttribute="bottom" constant="28" id="LUR-D1-FwK"/>
+                                    <constraint firstAttribute="height" constant="180" id="Mtf-t5-0dn"/>
+                                    <constraint firstAttribute="trailing" secondItem="8Tw-Vg-JJd" secondAttribute="trailing" constant="25" id="PzF-pl-LlI"/>
+                                    <constraint firstItem="H53-uM-Cru" firstAttribute="top" secondItem="Wmn-ya-bqB" secondAttribute="top" constant="58" id="Tak-6e-OWu"/>
+                                    <constraint firstItem="fB8-0L-fgS" firstAttribute="leading" secondItem="Wmn-ya-bqB" secondAttribute="leading" constant="25" id="XZI-4r-nPp"/>
+                                    <constraint firstItem="H53-uM-Cru" firstAttribute="centerX" secondItem="Wmn-ya-bqB" secondAttribute="centerX" id="bHZ-gZ-9Fi"/>
+                                    <constraint firstAttribute="width" constant="240" id="gmy-sN-c5W"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Wmn-ya-bqB" secondAttribute="trailing" constant="87" id="I4a-Yf-zRq"/>
+                            <constraint firstItem="Wmn-ya-bqB" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="180" id="PXF-Rt-JW7"/>
+                            <constraint firstItem="Wmn-ya-bqB" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="87" id="hJp-wX-5pt"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="44.866071428571423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
