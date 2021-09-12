@@ -14,18 +14,21 @@ class WifiDataSource {
   static func generateWifiData() -> [Wifi] {
     return [
       HongWifi.Wifi(nickname: "Wifi_Nickname", wifiName: "Wifi_Name", wifiPassword: "Wifi_Password"),
-      HongWifi.Wifi(nickname: "Wody 집", wifiName: "U+Net7148_5G", wifiPassword: "0665765K#8"),
-      HongWifi.Wifi(nickname: "집", wifiName: "SK_WiFiGIGACDF7_5G", wifiPassword: "1704032356"),
-      HongWifi.Wifi(nickname: "집", wifiName: "SK_WiFiGIGACDF7_5G", wifiPassword: "1704032356"),
-      HongWifi.Wifi(nickname: "집", wifiName: "SK_WiFiGIGACDF7_5G", wifiPassword: "1704032356"),
-      HongWifi.Wifi(nickname: "집", wifiName: "SK_WiFiGIGACDF7_5G", wifiPassword: "1704032356"),
-      HongWifi.Wifi(nickname: "집", wifiName: "SK_WiFiGIGACDF7_5G", wifiPassword: "1704032356"),
       
+      HongWifi.Wifi(nickname: "Tutorial", wifiName: "Press top camera button", wifiPassword: "example is below"),
+      HongWifi.Wifi(nickname: "Cafe Namu Wifi", wifiName: "U+Net7148_5G", wifiPassword: "0665765K#8"),
+      HongWifi.Wifi(nickname: "Made by", wifiName: "Dayeon, Minji, Jaeyong", wifiPassword: ""),
     ]
   }
   
   init() {
-    wifis = WifiDataSource.generateWifiData()
+    let standard = UserDefaults.standard
+    if let wifis = standard.array(forKey: "wifis") as? [Wifi] {
+      self.wifis = wifis
+    } else {
+      wifis = WifiDataSource.generateWifiData()
+    }
+
   }
   
   func numbersOfWifi() -> Int {

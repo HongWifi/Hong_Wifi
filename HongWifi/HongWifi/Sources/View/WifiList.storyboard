@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--WIFI LIST-->
+        <!--WIFI -->
         <scene sceneID="HqE-vJ-HJf">
             <objects>
                 <tableViewController storyboardIdentifier="WifiListViewController" id="6id-ew-MMe" customClass="WifiListViewController" customModule="HongWifi" customModuleProvider="target" sceneMemberID="viewController">
@@ -112,7 +112,7 @@
                             <outlet property="delegate" destination="6id-ew-MMe" id="Jwx-X6-C4w"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="WIFI LIST" id="tdv-KK-yqB">
+                    <navigationItem key="navigationItem" title="WIFI " id="tdv-KK-yqB">
                         <barButtonItem key="rightBarButtonItem" image="camera.fill" catalog="system" id="pPK-pQ-3P0">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>

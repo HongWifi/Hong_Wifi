@@ -24,7 +24,7 @@
 		D408263826E3437000E187A7 /* HongWifiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D408263726E3437000E187A7 /* HongWifiUITests.swift */; };
 		D408264D26E343F900E187A7 /* HotspotManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D408264C26E343F900E187A7 /* HotspotManager.swift */; };
 		D408264F26E3440400E187A7 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D408264E26E3440400E187A7 /* UIView+Extension.swift */; };
-		D408265126E3440B00E187A7 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D408265026E3440B00E187A7 /* TestModel.swift */; };
+		D424AAA326EDB0ED0084DBDC /* UIUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D424AAA226EDB0ED0084DBDC /* UIUtilities.swift */; };
 		D44654A026EC3A72004DDADF /* WifiList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D446549E26EC3A72004DDADF /* WifiList.storyboard */; };
 		D44654A526EC3A84004DDADF /* WifiDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44654A226EC3A84004DDADF /* WifiDataSource.swift */; };
 		D44654A626EC3A84004DDADF /* WifiListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44654A326EC3A84004DDADF /* WifiListViewController.swift */; };
@@ -78,7 +78,7 @@
 		D408263926E3437000E187A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D408264C26E343F900E187A7 /* HotspotManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotspotManager.swift; sourceTree = "<group>"; };
 		D408264E26E3440400E187A7 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
-		D408265026E3440B00E187A7 /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
+		D424AAA226EDB0ED0084DBDC /* UIUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUtilities.swift; sourceTree = "<group>"; };
 		D446549E26EC3A72004DDADF /* WifiList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WifiList.storyboard; sourceTree = "<group>"; };
 		D44654A226EC3A84004DDADF /* WifiDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WifiDataSource.swift; sourceTree = "<group>"; };
 		D44654A326EC3A84004DDADF /* WifiListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WifiListViewController.swift; sourceTree = "<group>"; };
@@ -201,7 +201,6 @@
 			isa = PBXGroup;
 			children = (
 				D44654A826EC3A92004DDADF /* Wifi.swift */,
-				D408265026E3440B00E187A7 /* TestModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -220,10 +219,10 @@
 			isa = PBXGroup;
 			children = (
 				D44654A326EC3A84004DDADF /* WifiListViewController.swift */,
+				9126A9B426E76ECC002D60FE /* TextVisionVC.swift */,
 				D44654A426EC3A84004DDADF /* StoredWifiCell.swift */,
 				D44654A226EC3A84004DDADF /* WifiDataSource.swift */,
 				D408261926E3436F00E187A7 /* ViewController.swift */,
-				9126A9B426E76ECC002D60FE /* TextVisionVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -232,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				D408264C26E343F900E187A7 /* HotspotManager.swift */,
+				D424AAA226EDB0ED0084DBDC /* UIUtilities.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -552,11 +552,11 @@
 				D408261A26E3436F00E187A7 /* ViewController.swift in Sources */,
 				D408261626E3436F00E187A7 /* AppDelegate.swift in Sources */,
 				D408261826E3436F00E187A7 /* SceneDelegate.swift in Sources */,
-				D408265126E3440B00E187A7 /* TestModel.swift in Sources */,
 				D408264F26E3440400E187A7 /* UIView+Extension.swift in Sources */,
 				D408264D26E343F900E187A7 /* HotspotManager.swift in Sources */,
 				D44654A626EC3A84004DDADF /* WifiListViewController.swift in Sources */,
 				D44654A926EC3A92004DDADF /* Wifi.swift in Sources */,
+				D424AAA326EDB0ED0084DBDC /* UIUtilities.swift in Sources */,
 				D44654A726EC3A84004DDADF /* StoredWifiCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,11 +9,13 @@ import Foundation
 import UIKit
 import NetworkExtension
 import SnapKit
+import MLImage
+import MLKit
 
 class WifiListViewController: UITableViewController {
   
   var wifisDataSource = WifiDataSource()
-  
+
   lazy var picker = UIImagePickerController()
   lazy var activity = UIActivityIndicatorView()
   var selectedImage: UIImage?
@@ -23,7 +25,7 @@ class WifiListViewController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    
+    self.title = "Muyahong Wifi"
     activity.style = .large
     activity.hidesWhenStopped = true
     view.addSubview(activity)
@@ -146,6 +148,7 @@ extension WifiListViewController: UIImagePickerControllerDelegate, UINavigationC
       DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+0.1) {
         let sb = UIStoryboard.init(name: "TextVision", bundle: nil)
         guard let vc = sb.instantiateViewController(identifier: "TextVisionVC") as? TextVisionVC else { return }
+        vc.image = editedImage
         self.navigationController?.pushViewController(vc, animated: true)
       }
     }
